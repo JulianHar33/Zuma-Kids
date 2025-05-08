@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #1a1a1a, #333);
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+  canvas {
+    display: block;
+    margin: auto;
+    background: radial-gradient(circle at center, #555, #222);
+    box-shadow: 0 0 20px #000;
+  }
+  #scoreBoard, #menuOverlay, #gameOverScreen {
+    #gameOverScreen {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* fundal semi-transparent */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    
+    .game-over-content {
+      background-color: white;
+      padding: 30px 50px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      font-family: Arial, sans-serif;
+    }
+    
+    #gameOverText {
+      font-size: 3em;
+      font-weight: bold;
+      color: #FF4444;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 10px;
+    }   
+    
+    #finalScore {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #45a049;
+    }
+    
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    z-index: 10;
+  }
+  #scoreBoard {
+    top: 10px;
+    left: 10px;
+  }
+  #menuOverlay,
+  #gameOverScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* fundal semi-transparent */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #menuOverlay h2,
+  #gameOverText {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  #finalScore {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  #menuOverlay button,
+  #gameOverScreen button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #menuOverlay button:hover,
+  #gameOverScreen button:hover {
+    background: #45a049;
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #00c2ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #009fcc;
+  }
+  
+  

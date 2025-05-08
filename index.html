@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zuma Kids</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="scoreBoard">Score: 0 | Level: 1 | Lives: 10</div>
+  <div id="menuOverlay" style="display: flex;">
+    <h2>Bine ai venit la Zuma Kids!</h2>
+    <button onclick="startGame()">Start Game</button>
+  </div>
+  <div id="gameOverScreen" style="display: none;">
+    <div id="gameOverText">Game Over</div>
+    <div id="finalScore">Scor final: 0</div>
+    <button onclick="restartGame()">Try Again</button>
+  </div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
